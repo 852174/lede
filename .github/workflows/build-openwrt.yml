@@ -33,7 +33,11 @@ env:
   UPLOAD_RELEASE: false
   TZ: Asia/Shanghai
 
-steps:
+  jobs:
+  Build:
+    runs-on: ubuntu-22.04
+
+    steps:
     - name: Check Server Performance
       run: |
         echo "警告⚠"
